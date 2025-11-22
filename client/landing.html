@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chifa Centro | Comida China Estilo Cantonés</title>
+    <meta name="description" content="El mejor chifa de Huancayo desde 1993. Platos a la carta, delivery y recojo en local.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'chifa-red': '#B91C1C', // Rojo intenso
+                        'chifa-gold': '#F59E0B', // Dorado
+                        'chifa-dark': '#1F2937',
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=1974&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .tab-active {
+            background-color: #B91C1C;
+            color: white;
+            border-color: #B91C1C;
+        }
+        .menu-item-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        /* Ocultar scrollbar en navegación de tabs en móvil */
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="bg-chifa-red text-white p-2 rounded-full w-10 h-10 flex items-center justify-center font-serif font-bold text-xl">
+                        C
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif font-bold text-2xl text-chifa-dark tracking-tight">Chifa Centro</span>
+                        <span class="text-xs text-chifa-gold font-bold uppercase tracking-widest">Desde 1993</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-chifa-red font-medium transition">Inicio</a>
+                    <a href="#nosotros" class="text-gray-600 hover:text-chifa-red font-medium transition">Nosotros</a>
+                    <a href="#menu" class="text-gray-600 hover:text-chifa-red font-medium transition">La Carta</a>
+                    <a href="#contacto" class="bg-chifa-red text-white px-6 py-2 rounded-full font-bold hover:bg-red-800 transition shadow-lg transform hover:scale-105">
+                        Pedir Ahora
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-chifa-red focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="#inicio" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-chifa-red hover:bg-red-50">Inicio</a>
+                <a href="#nosotros" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-chifa-red hover:bg-red-50">Nosotros</a>
+                <a href="#menu" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-chifa-red hover:bg-red-50">La Carta</a>
+                <a href="#contacto" class="block px-3 py-3 rounded-md text-base font-bold text-white bg-chifa-red hover:bg-red-800 text-center mt-4">Hacer Pedido</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-chifa-gold/20 text-chifa-gold border border-chifa-gold mb-6 font-bold tracking-wider animate-pulse">
+                <i class="fas fa-star mr-2"></i> AUTÉNTICO SABOR CANTONÉS
+            </span>
+            <h1 class="text-4xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight shadow-black drop-shadow-lg">
+                La Tradición del <br><span class="text-chifa-gold">Buen Sabor</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                Disfruta de la mejor comida china en Huancayo. Calidad y tradición desde 1993. Exclusivo para Recojo y Delivery.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#menu" class="bg-chifa-red text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-800 transition shadow-xl flex items-center justify-center gap-2">
+                    <i class="fas fa-book-open"></i> Ver Carta
+                </a>
+                <a href="#contacto" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-chifa-dark transition shadow-xl flex items-center justify-center gap-2">
+                    <i class="fas fa-phone-alt"></i> Llamar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Bar -->
+    <div class="bg-chifa-dark text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="flex flex-col items-center">
+                <i class="fas fa-clock text-3xl text-chifa-gold mb-2"></i>
+                <h3 class="font-bold">Desde 1993</h3>
+                <p class="text-xs text-gray-400">Tradición garantizada</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-motorcycle text-3xl text-chifa-gold mb-2"></i>
+                <h3 class="font-bold">Delivery</h3>
+                <p class="text-xs text-gray-400">El Tambo y San Carlos</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-shopping-bag text-3xl text-chifa-gold mb-2"></i>
+                <h3 class="font-bold">Para Llevar</h3>
+                <p class="text-xs text-gray-400">Recojo en local</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas fa-credit-card text-3xl text-chifa-gold mb-2"></i>
+                <h3 class="font-bold">Todos los Pagos</h3>
+                <p class="text-xs text-gray-400">Yape, Visa, Master, Amex</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-chifa-red font-bold tracking-widest uppercase mb-2">Nuestra Carta</h2>
+                <h3 class="text-4xl font-serif font-bold text-gray-900">Platos Exquisitos</h3>
+                <div class="w-24 h-1 bg-chifa-gold mx-auto mt-4"></div>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="flex overflow-x-auto hide-scroll gap-2 md:justify-center mb-10 pb-4">
+                <button onclick="filterMenu('especiales')" class="menu-tab active whitespace-nowrap px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-bold hover:border-chifa-red hover:text-chifa-red transition tab-active" data-category="especiales">Especiales</button>
+                <button onclick="filterMenu('chaufas')" class="menu-tab whitespace-nowrap px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-bold hover:border-chifa-red hover:text-chifa-red transition" data-category="chaufas">Chaufas</button>
+                <button onclick="filterMenu('sopas')" class="menu-tab whitespace-nowrap px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-bold hover:border-chifa-red hover:text-chifa-red transition" data-category="sopas">Sopas</button>
+                <button onclick="filterMenu('platos')" class="menu-tab whitespace-nowrap px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-bold hover:border-chifa-red hover:text-chifa-red transition" data-category="platos">Pollo y Cerdo</button>
+                <button onclick="filterMenu('tallarines')" class="menu-tab whitespace-nowrap px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-bold hover:border-chifa-red hover:text-chifa-red transition" data-category="tallarines">Tallarines</button>
+                <button onclick="filterMenu('entradas')" class="menu-tab whitespace-nowrap px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-bold hover:border-chifa-red hover:text-chifa-red transition" data-category="entradas">Entradas</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Especial -->
+    <section class="py-16 bg-chifa-red relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pattern-grid-lg text-white"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-white text-center md:text-left">
+                <h3 class="text-3xl md:text-4xl font-serif font-bold mb-4">¿Tienes una reunión familiar?</h3>
+                <p class="text-red-100 text-lg mb-0">Prueba nuestros platos familiares como el <span class="font-bold text-white">Kam Lu Wantan</span> o el <span class="font-bold text-white">Taypa Especial</span>.</p>
+            </div>
+            <div>
+                <a href="tel:064252222" class="inline-block bg-white text-chifa-red font-bold py-4 px-8 rounded-full shadow-lg hover:bg-gray-100 transition transform hover:scale-105">
+                    <i class="fas fa-phone-alt mr-2"></i> Pedir Delivery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-chifa-red font-bold tracking-widest uppercase mb-2">Contacto</h2>
+                <h3 class="text-4xl font-serif font-bold text-gray-900">Nuestros Locales</h3>
+                <div class="w-24 h-1 bg-chifa-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Local 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 text-center group hover:border-chifa-red transition">
+                    <div class="w-16 h-16 bg-chifa-red text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 group-hover:bg-chifa-gold transition">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Sede El Tambo</h3>
+                    <p class="text-gray-600 mb-6">Zona exclusiva de delivery y recojo</p>
+                    
+                    <div class="space-y-3">
+                        <a href="tel:064252222" class="block w-full bg-white border border-gray-300 py-3 rounded-lg font-bold text-gray-700 hover:bg-chifa-red hover:text-white hover:border-chifa-red transition">
+                            <i class="fas fa-phone mr-2"></i> (064) 25 22 22
+                        </a>
+                        <a href="tel:973973777" class="block w-full bg-green-500 border border-green-500 py-3 rounded-lg font-bold text-white hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp mr-2"></i> 973 973 777
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Local 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-100 text-center group hover:border-chifa-red transition">
+                    <div class="w-16 h-16 bg-chifa-red text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-6 group-hover:bg-chifa-gold transition">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Sede San Carlos</h3>
+                    <p class="text-gray-600 mb-6">Zona exclusiva de delivery y recojo</p>
+                    
+                    <div class="space-y-3">
+                        <a href="tel:064214444" class="block w-full bg-white border border-gray-300 py-3 rounded-lg font-bold text-gray-700 hover:bg-chifa-red hover:text-white hover:border-chifa-red transition">
+                            <i class="fas fa-phone mr-2"></i> (064) 21 44 44
+                        </a>
+                        <a href="tel:973973500" class="block w-full bg-green-500 border border-green-500 py-3 rounded-lg font-bold text-white hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp mr-2"></i> 973 973 500
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex justify-center space-x-6 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition">
+                <i class="fab fa-cc-visa text-4xl text-blue-800" title="Visa"></i>
+                <i class="fab fa-cc-mastercard text-4xl text-red-600" title="Mastercard"></i>
+                <i class="fab fa-cc-amex text-4xl text-blue-500" title="Amex"></i>
+                <i class="fab fa-cc-diners-club text-4xl text-blue-900" title="Diners"></i>
+                <div class="flex items-center font-bold text-purple-800 bg-gray-200 px-2 rounded"><span class="text-xl">Yape</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-chifa-dark text-gray-300 py-10 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <h4 class="font-serif text-xl font-bold text-white">Chifa Centro</h4>
+                <p class="text-sm text-gray-500">合聚大酒家 • Desde 1993</p>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                <p>&copy; 2025 Chifa Centro. Todos los derechos reservados.</p>
+                <p class="text-gray-600 text-xs mt-1">Precios referenciales según carta 2024.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/n8n-embedded-chat-interface@latest/output/index.js"></script>
+	<n8n-embedded-chat-interface label="My AI Assistant" hostname="" open-on-start="false">
+	</n8n-embedded-chat-interface>
+	<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+	<script type="module">
+		import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+		createChat({
+			webhookUrl: 'https://n8n.mycustomdevs.com/webhook/4091fa09-fb9a-4039-9411-7104d213f601/chat',
+			defaultLanguage: 'es',
+			initialMessages: [
+				'Hola! 👋',
+				'Mi nombre es Alicia. ¿Como puedo ayudarte hoy?'
+			],
+			i18n: {
+				es: {
+					title: 'Hola! 👋',
+					subtitle: "Estamos atendiendo 24/7.",
+					footer: '',
+					getStarted: 'Nueva conversación',
+					inputPlaceholder: 'Ingresa tu pregunta..',
+				},
+			},
+		});
+	</script>
+    <script>
+        // Data extracted from PDF
+        const menuItems = [
+            // Especiales
+            { category: 'especiales', name: 'Chi Jau Kay', price: '28.50', desc: 'Pierna de pollo crocante bañada en salsa especial con ostión.', image: 'https://chifadukang.com/wp-content/uploads/2024/10/chijaukay_CHIFA_Du_Kang-1.jpg' },
+            { category: 'especiales', name: 'Ti Pa Kay', price: '30.00', desc: 'Pierna de pollo crocante bañada en salsa tamarindo con piña.', image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=800&auto=format&fit=crop' },
+            { category: 'especiales', name: 'Kam Lu Wantan', price: '34.50', desc: 'Pollo, pato, chancho, frutas y wantanes fritos.', image: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?q=80&w=800&auto=format&fit=crop' },
+            { category: 'especiales', name: 'Tay Pa Especial', price: '36.50', desc: 'Pollo, pato, chancho, wenyi, champiñones, choclitos y más.', image: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop' },
+            
+            // Chaufas
+            { category: 'chaufas', name: 'Chaufa de Pollo', price: '21.00', desc: 'Clásico arroz chaufa con trozos de pollo.', image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop' },
+            { category: 'chaufas', name: 'Chaufa de Chancho', price: '24.00', desc: 'Con nuestro delicioso chancho asado.', image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=800&auto=format&fit=crop' },
+            { category: 'chaufas', name: 'Chaufa Especial', price: '29.50', desc: 'Combinación perfecta de pollo y chancho asado.', image: 'https://comopreparar.pe/app/public_root/imgs/medios/68b5effaebb19_lg_5fdd5b4acf89f80dcc653f1d.jpg' },
+            { category: 'chaufas', name: 'Chaufa Vegetariano', price: '19.00', desc: 'Champiñones, brócoli, frejolito chino y pimentón.', image: 'https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?q=80&w=800&auto=format&fit=crop' },
+
+            // Sopas
+            { category: 'sopas', name: 'Sopa Wantan', price: '18.50', desc: 'Caldo sustancioso con wantanes rellenos.', image: 'https://origin.cronosmedia.glr.pe/large/2021/11/29/lg_61a5163b7bfdbc2fba3f1b24.jpg' },
+            { category: 'sopas', name: 'Sopa Womin', price: '21.00', desc: 'Pollo, pato, bamboo, verduras, fideos, pasta wantan y chancho.', image: 'https://www.chinawok.com.pe/media/catalog/product/a/g/agru_2146467691.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700&format=jpeg' },
+            { category: 'sopas', name: 'Sopa de Pollo con Verduras', price: '17.50', desc: 'Ligera y saludable.', image: 'https://www.ajinomoto.com.pe:8085/img/receta/109.-Sopa-de-pollo.jpg' },
+
+            // Platos (Pollo/Cerdo)
+            { category: 'platos', name: 'Pollo con Verduras', price: '20.00', desc: 'Filete de pollo salteado con verduras frescas.', image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=800&auto=format&fit=crop' },
+            { category: 'platos', name: 'Pollo con Piña', price: '21.00', desc: 'Toque agridulce con piña fresca.', image: 'https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=800&auto=format&fit=crop' },
+            { category: 'platos', name: 'Chancho Asado con Tamarindo', price: '30.00', desc: 'Cerdo asado en su punto con salsa tamarindo.', image: 'https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=800&auto=format&fit=crop' },
+            { category: 'platos', name: 'Lomo Fino Saltado', price: '31.00', desc: 'Con verduras orientales.', image: 'https://images.unsplash.com/photo-1611143669185-af224c5e3252?q=80&w=800&auto=format&fit=crop' },
+
+            // Tallarines
+            { category: 'tallarines', name: 'Tallarín Saltado con Pollo', price: '23.00', desc: 'Fideos chinos salteados al wok.', image: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop' },
+            { category: 'tallarines', name: 'Tallarín Samsi', price: '38.00', desc: 'Especial de la casa con variedad de carnes.', image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=800&auto=format&fit=crop' },
+
+            // Entradas
+            { category: 'entradas', name: 'Wantan Frito', price: '11.50', desc: 'Clásicos wantanes fritos con tamarindo (Docena).', image: 'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/67KFBTHDMVH4NKYTYLFGGDEF4Q.png' },
+            { category: 'entradas', name: 'Wantan Frito (1/2 Doc)', price: '6.00', desc: 'Media docena para el antojo.', image: 'https://chifadukang.com/wp-content/uploads/2024/10/como-hacer-wantan-frito.jpg' }
+        ];
+
+        const menuGrid = document.getElementById('menu-grid');
+
+        function renderMenu(category) {
+            menuGrid.innerHTML = '';
+            const filtered = menuItems.filter(item => item.category === category);
+            
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'menu-item-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col';
+                card.innerHTML = `
+                    <div class="h-48 overflow-hidden relative group">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-0 right-0 bg-chifa-gold text-chifa-dark font-bold px-3 py-1 rounded-bl-lg text-sm">
+                            S/ ${item.price}
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-xl text-gray-900 mb-2">${item.name}</h4>
+                            <p class="text-gray-600 text-sm mb-4">${item.desc}</p>
+                        </div>
+                        <button class="w-full text-chifa-red font-bold border border-chifa-red rounded-lg py-2 hover:bg-chifa-red hover:text-white transition text-sm">
+                            Solicitar
+                        </button>
+                    </div>
+                `;
+                menuGrid.appendChild(card);
+            });
+        }
+
+        function filterMenu(category) {
+            // Update active button
+            document.querySelectorAll('.menu-tab').forEach(btn => {
+                btn.classList.remove('tab-active');
+                if(btn.dataset.category === category) {
+                    btn.classList.add('tab-active');
+                }
+            });
+            
+            renderMenu(category);
+        }
+
+        // Init
+        renderMenu('especiales');
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/95', 'shadow-md');
+                nav.classList.remove('bg-transparent');
+            } else {
+                // nav.classList.remove('bg-white/95', 'shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>

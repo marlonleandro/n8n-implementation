@@ -1,0 +1,106 @@
+﻿categoria,plato,descripcion,precio
+Para Compartir,Wantán Frito con Tamarindo (Docena),Empanaditas chinas fritas con salsa de tamarindo,11.5
+Para Compartir,Wantán Frito con Tamarindo (1/2 Docena),Media docena,6
+Sopas,Sopa de Pollo con Verduras,Caldo con pollo y verduras,17.5
+Sopas,Sopa Wantán,Con pasta wantán,18.5
+Sopas,Sopa de Pollo con Huevitos de Codorniz,Con huevos de codorniz,18.5
+Sopas,Sopa de Pollo con Kion,Con jengibre,19
+Sopas,Sopa Womin,"Pollo, pato, bambú, verduras, fideos, pasta wantán, chancho filete",21
+Sopas,Sopa de Espárragos,"Pollo en cubitos, espárragos blancos, huevo",16
+Sopas,Sopa Samsi,"Pollo, pato, chancho, champiñones, bambú, hongos chinos, fideos (fansi), clara",16
+Sopas,Sopa Pac Poo,"Pollo, chancho, champiñones, choclitos chinos, fansi, verduras, clara",16
+Sopas,Sopa Fu Chi Fu,"Pollo, champiñones, bambú, hongos chinos, col china, huevo",16
+Carne de Pollo,Pollo con Verduras,Salteado de pollo con verduras,20
+Carne de Pollo,Pollo con Champiñones,Con champiñones y verduras,21
+Carne de Pollo,Pollo con Castañas,Salteado con castañas,20
+Carne de Pollo,Pollo con Castañas de Cajú,Con nuez de la india,20
+Carne de Pollo,Pollo en Salsa Curry,Trozos de pollo en salsa curry,20.5
+Carne de Pollo,Pollo con Tausi y Verduras,Salsa de frejol negro fermentado,19.5
+Carne de Pollo,Chicharrón de Pollo,Crocante,21
+Carne de Pollo,Pollo con Piña,Estilo agridulce,21
+Carne de Pollo,Pollo con Duraznos,Con durazno en salsa,22.5
+Carne de Pollo,Pollo Lai Chi,Con fruta china,22
+Carne de Pollo,Pollo con Nabo Encurtido,Estilo dulce,20
+Carne de Pollo,Pollo al Limón,Pollo frito en salsa de limón,20
+Carne de Cerdo,Chancho Asado con Verduras,Cerdo asado salteado,30
+Carne de Cerdo,Chancho Asado al Ajo,Estilo cantonés,30
+Carne de Cerdo,Chancho Asado con Tamarindo,En salsa de tamarindo,30
+Carne de Cerdo,Chancho Asado con Piña,Estilo agridulce,31
+Carne de Cerdo,Chancho Asado con Nabo Encurtido,Estilo dulce,32
+Carne de Cerdo,Chancho Asado con Frutas,Con frutas mixtas,33
+Lomo Fino,Lomo Fino con Verduras,Salteado con verduras,31
+Lomo Fino,Lomo Fino con Champiñones,Con champiñones y verduras,31.5
+Lomo Fino,Lomo Fino con Verduras y Fansi,Con fideos chinos transparentes,32
+Lomo Fino,Lomo Fino al Curry,Con salsa curry,31
+Lomo Fino,Lomo Fino con Tausi y Verduras,Con salsa de frejol negro,32
+Lomo Fino,Lomo Fino Especial,"Saltado con bambú, hongos, fansi, verduras y otros",37.5
+Arroz Chaufa,Chaufa con Pollo,Tradicional con pollo,21
+Arroz Chaufa,Chaufa con Chancho Asado,Con cerdo asado,24
+Arroz Chaufa,Chaufa con Lomo Fino,Con lomo,25
+Arroz Chaufa,Chaufa con Pollo y Chancho Asado,Mixto,29.5
+Arroz Chaufa,Chaufa con Pollo y Champiñones,Con verduras,22
+Arroz Chaufa,Chaufa con Pollo y Frejolito Chino,Con brotes de frejol,22
+Arroz Chaufa,Chaufa Vegetariano,"Con champiñones, brócoli, frejolito chino, pimentón",19
+Arroz Chaufa,Chaufa de Pollo (Porción Chica),Tamaño personal,10
+Tallarines,Tallarín Saltado con Pollo,Con pollo,23
+Tallarines,Tallarín Saltado con Lomo Fino,Con lomo,30.5
+Tallarines,Tallarín Saltado con Chancho Asado,Con cerdo,29.5
+Tallarines,Tallarín con Pollo en Salsa Curry,Con trozos de pollo en curry,24.5
+Tallarines,Tallarín Tres Delicias,"Pollo, chancho, champiñones, verduras",32
+Tallarines,Tallarín con Pollo en Trozos,Verduras variadas y champiñones,26
+Vegetarianos,Sopa Vegetariana,"Verduras, bambú, choclitos, espárragos y especias",16.5
+Vegetarianos,Sopa Pac Poo Vegetariana,"Champiñones, bambú, choclitos, hongos, fansi, verduras",17
+Vegetarianos,Tai Pa Vegetariano,"Champiñones, bambú, choclitos, hongos, wenyi, verduras",27
+Vegetarianos,Tallarín Taipa Vegetariano,Fideos salteados estilo Taipa,28.5
+Vegetarianos,Tallarín Saltado Vegetariano,"Verduras variadas, champiñones y wenyi",21
+Vegetarianos,Verduras Saltadas en Salsa de Ostión,Con champiñones,21
+Vegetarianos,Verduras Saltadas con Champiñones y Fansi,Estilo cantonés,22
+Vegetarianos,Sahofen Saltado con Verduras,Con champiñones y wenyi,22
+Vegetarianos,Arroz Chaufa Vegetariano,"Champiñones, brócoli, frejolito chino, pimentón",19
+Vegetarianos,Arroz Chaufa con Champiñones y Frejolito,Estilo vegetariano,19.5
+Platos Especiales,Chi Jau Kay,Pierna de pollo crocante en salsa ostión,28.5
+Platos Especiales,Tai Pa Especial,"Pollo, pato, chancho, wenyi, champiñones, choclitos, bambú",36.5
+Platos Especiales,Tallarín Taipa,Fideos salteados con carnes variadas,38
+Platos Especiales,Samsi Especial,"Pollo, pato, chancho, hongos chinos, verduras, bambú, fansi",36.5
+Platos Especiales,Tallarín Samsi,Fideos con carnes y verduras,38
+Platos Especiales,Fansi Especial,"Fideos transparentes con carnes, verduras, champiñones y wenyi",37
+Platos Especiales,Lomo Fino Especial,"Saltado con wenyi, bambú, hongos, fansi, verduras",37.5
+Platos Especiales,Enrollado de Pollo con Castañas (3 pzs),Pollo relleno con castañas,28.5
+Platos Especiales,Enrollado de Pollo con Chancho (3 pzs),Pollo relleno con cerdo,29.5
+Platos Especiales,Enrollado de Pollo en Salsa de Espárragos,Pollo en salsa de espárragos,28
+Platos Especiales,Enrollado de Pollo con Castañas (1 pza),Por unidad,9.5
+Platos Especiales,Kam Lu Wantán,"Pollo, pato, chancho, frutas y wantanes fritos",34.5
+Platos Especiales,Tipaakay,Pierna de pollo crocanteado en tamarindo y piña,30
+Platos Especiales,Limón Kay,Pierna de pollo crocanteado en salsa de tamarindo y limón,28.5
+Platos Especiales,Pollo con Frutas,"Pollo con durazno, piña, laychi, naranjitas chinas",28
+Platos Especiales,Chancho y Pollo con Frutas,Mixto,32.5
+Platos Especiales,Enrollado de Pollo con Frutas,Con frutas variadas,30
+Platos Especiales,Pollo Cinco Sabores,Pecho de pollo arrebozado con frutas,29.5
+Guarniciones,Arroz Blanco,Porción individual,7
+Guarniciones,Nabo en Curtido,Porción,9
+Guarniciones,Huevitos de Codorniz,10 unidades,4.5
+Guarniciones,Wayen,Porción 2 onzas,3.5
+Guarniciones,Salsa de Tamarindo,Porción de 4 onzas,3.5
+Bebidas Frías,Limonada (1 Lt),Jarra,10.5
+Bebidas Frías,Inka Kola 1.5 Lt,Gaseosa,10.5
+Bebidas Frías,Coca Cola 1.5 Lt,Gaseosa,10.5
+Bebidas Frías,Inka Kola 600 ml,Gaseosa,4.5
+Bebidas Frías,Agua San Mateo 600 ml,Agua mineral sin gas,4.5
+Infusiones,Té Jazmín,Digestivo,7
+Infusiones,Té Jazmín Filtrante,En taza,4.5
+Infusiones,"Mate de Anís, Manzanilla o Coca",Infusión,5.5
+Postres,Duraznos al Jugo,En almíbar,6.5
+Postres,Naranjitas Chinas,10 unidades en almíbar,6.5
+Vinos,Vino Tacama Tinto Selección Especial,Botella,46
+Vinos,Vino Tacama Blanco de Blancos (Seco),Botella,46
+Vinos,Vino Tacama Gran Tinto,Botella,31
+Vinos,Vino Tacama Gran Blanco (Seco),Botella,31
+Vinos,Vino Tacama Rosé (Semi Seco),Botella,29
+Vinos,Vino Casillero del Diablo (Tinto),Botella,39
+Vinos,Vino Tabernero Borgoña (Dulce),Botella,26
+Vinos,Vino Tabernero Rosé (Semi Seco),Botella,26
+Vinos,Vino Santiago Queirolo Borgoña (Dulce),Botella,26
+Vinos,Vino Santiago Queirolo Rosé (Semi Seco),Botella,26
+Vinos,Vino Santiago Queirolo Borgoña (Chico),Botella pequeña,19
+Vinos,Vino Tinto Chico (varios),"Tabernero, Intipalka u otros",19
+Vinos,Sangría Tabernero (1 Lt),Jarra,19
