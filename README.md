@@ -137,5 +137,5 @@ Para que el workflow funcione, se deben configurar las siguientes credenciales d
 
 ## Contribución
 
-Autor: Marlon Leandro @ 2025
-Perfil: https://www.linkedin.com/in/marlonleandro/
+- Autor: Marlon Leandro @ 2025
+- Perfil: https://www.linkedin.com/in/marlonleandro/
