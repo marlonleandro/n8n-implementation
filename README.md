@@ -6,7 +6,7 @@ Este proyecto contiene un flujo de trabajo (workflow) de n8n diseñado para impl
 El workflow se activa a través de un Webhook, integrado en la landing page del restaurante y que esta disponible 24/7. El asistente tiene información de la carta del restaurante con los precios actualizados al 2025.
 
 ## Estructura del proyecto
-
+```bash
 n8n-implementation/
 ├─ LICENSE                            #Licenciamiento Apache 2.0
 ├─ README.md                          #Este archivo
@@ -19,7 +19,7 @@ n8n-implementation/
 │  └─ SAT2025_Agentes_n8n_AIFoundry.pdf 
 └─ workflow
    └─ Demo_ RAG_with_AIFoundry.json   #Workflow para importar en n8n
-
+```
 
 ## Estructura del Workflow
 
